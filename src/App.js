@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React, {useState, useEffect} from "react";
 import './App.css';
 
 function App() {
+  
+  const [link, setLink] = useState('some link asdasd');
+  const [printableRandomObjects, setprintableRandomObjects] = useState({});
+
+  useEffect(() => {
+    document.title = "Omnilytics Programming Challenge - UI"
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="contentWrapper">
+        <button onClick={() => alert('test')}>
+            Generate
+        </button>
+        <p>Link: <span className="appLink">{link}</span></p>
+        <button onClick={() => alert('test')}>
+          Report
+        </button>
+        <p>Alphabetical String: {printableRandomObjects.AlphabeticalString}</p>
+        <p>Real Numbers: {printableRandomObjects.RealNumbers}</p>
+        <p>Integers: {printableRandomObjects.Integers}</p>
+        <p>Alphanumerics: {printableRandomObjects.Alphanumerics}</p>
+      </div>
     </div>
   );
 }
