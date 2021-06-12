@@ -29,7 +29,7 @@ function App() {
     if (isRequestPending) return
     setIsRequestPending(true)
     await axios(
-      'http://localhost:3000/generate',
+      process.env.REACT_APP_API_URL+'/generateMultiPartRandomObject',
     ).then((res)=>{
       setprintableRandomObjects(res.data);
       makeFile(res.data.generatedString);
