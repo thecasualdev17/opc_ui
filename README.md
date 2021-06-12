@@ -28,4 +28,4 @@ All the communication between frontend and backend MUST be done via these APIs o
 `/` - returns the main app page
 
 UI Part can be found in here [APP](https://opc-ui.netlify.app/) - [GIT](https://github.com/thecasualdev17/opc_ui)  
-API Part can be found on this link: [HEROKU](https://opc-api.herokuapp.com/) - [EC2](http://54.255.196.92:3000)  
+API Part can be found on this link: [HEROKU](https://opc-api.herokuapp.com/) - [EC2](http://54.255.196.92:3000) - [GIT](https://github.com/thecasualdev17/opc_api)  
