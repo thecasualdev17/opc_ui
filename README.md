@@ -2,7 +2,7 @@
 
 This project is bare react app made with create-react-app
 
-## The Challennge
+## The Challenge
 
 **Challenge Description**
 
